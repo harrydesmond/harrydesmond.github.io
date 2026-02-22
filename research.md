@@ -41,6 +41,14 @@ I am interested in all aspects of the galaxy--halo connection, from empirical to
 
 - **R. Stiskalek**, H. Desmond, T. Holvey, M. G. Jones (2021). *The dependence of subhalo abundance matching on galaxy photometry and selection criteria.* MNRAS 506:3205. [arXiv:2101.02765](https://arxiv.org/abs/2101.02765)
 
+### Galaxy dynamics
+
+I am interested in the empirical correlations governing the dynamics of disc galaxies, such as the radial acceleration relation (RAR), the baryonic Tully-Fisher relation (BTFR), and others. A particular focus has been establishing the RAR -- the tight correlation between baryonic and total dynamical accelerations -- as the fundamental organising principle of late-type galaxy dynamics, and exploring what this implies for galaxy formation and modified gravity.
+{: style="text-align: justify"}
+
+- **R. Stiskalek**, H. Desmond (2023). *On the fundamentality of the radial acceleration relation for late-type galaxy dynamics.* MNRAS 525:6130. [arXiv:2305.19978](https://arxiv.org/abs/2305.19978)
+- F. Boreiko, T. Yasin, H. Desmond, **R. Stiskalek**, M. J. Jarvis (2026). *Testing subhalo abundance matching with galaxy kinematics.* Submitted. [arXiv:2601.07799](https://arxiv.org/abs/2601.07799)
+
 ### Machine learning methods
 
 I am interested in graph-based methods and geometric deep learning to capture physical structure in cosmological datasets, and simulation-based inference (SBI) to perform implicit likelihood inference where traditional likelihoods are intractable -- including applications to JWST data to infer the ionising photon contributions of high-redshift galaxies. I commonly employ normalising flows, Gaussian processes, neural networks, and tree-based models to study, for example, the scatter in the galaxy--halo connection and to quantify uncertainties in astrophysical models. I also work extensively with Hamiltonian Monte Carlo and gradient-based samplers for scalable Bayesian inference.
