@@ -1,16 +1,15 @@
 # Site settings
-title: "Richard Stiskalek"
-description: 'DPhil candidate in Astrophysics at the University of Oxford, Balliol College'
-url: 'https://richard-sti.github.io'
+title: "Harry Desmond"
+description: 'Senior Research Fellow, Institute of Cosmology and Gravitation, University of Portsmouth'
+url: 'https://harrydesmond.github.io'
 baseurl: ''
 disable_landing_page: true
 # google_analytics: 'UA-XXXXXX-X'
 
 author:
-  name: 'Richard Stiskalek'
-  email: richard.stiskalek@physics.ox.ac.uk
-  github_username: Richard-Sti
-  linkedin_username: richard-stiskalek
+  name: 'Harry Desmond'
+  email: harry.desmond@port.ac.uk
+  github_username: harrydesmond
 
 defaults:
   -
@@ -41,4 +40,4 @@ kramdown:
   hard_wrap: false
 
 plugins: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', 'CLAUDE.md']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', 'CLAUDE.md', 'vendor']

@@ -3,26 +3,20 @@ layout: page
 title: About me
 ---
 
-<img src="/images/profile.jpg" alt="Richard Stiskalek" style="float: right; width: 200px; margin: 0 0 1em 1.5em; border-radius: 8px;">
+<img src="/images/profile.png" alt="Harry Desmond" style="float: right; width: 200px; margin: 0 0 1em 1.5em; border-radius: 8px;">
 
-I am a DPhil candidate in Astrophysics at the [University of Oxford](https://www.physics.ox.ac.uk/research/subdepartment/astrophysics) ([Balliol College](https://www.balliol.ox.ac.uk)), supervised by [Harry Desmond](https://www.port.ac.uk/about-us/structure-and-governance/our-people/our-staff/harry-desmond), [Julien Devriendt](https://www.physics.ox.ac.uk/our-people/devriendt), and [Adrianne Slyz](https://www.physics.ox.ac.uk/our-people/slyz). I am a member of the [Aquila Consortium](https://aquila-consortium.org), the [Learning the Universe](https://learning-the-universe.org), and the [CAMELS](https://www.camel-simulations.org) collaborations.
+I am a Senior Research Fellow at the [Institute of Cosmology and Gravitation](https://www.port.ac.uk/research/research-centres-and-groups/institute-of-cosmology-and-gravitation), [University of Portsmouth](https://www.port.ac.uk/), supported by a Royal Society University Research Fellowship.
 {: style="text-align: justify"}
 
-I specialise in Bayesian forward modelling of astrophysical observations and digital twins of the local Universe, leveraging galaxy clustering and peculiar velocities to infer the initial conditions of the Universe. Lately, I have been deriving novel statistical frameworks for measuring the expansion rate, ranging from Milky Way stars to nearby Cepheid, tip of the red giant branch (TRGB), and maser host galaxies, all the way to distant supernovae -- though the latter remain a challenge due to their complex selection effects.
-{: style="text-align: justify"}
-
-Beyond this, I am broadly interested in galaxy formation and semi-analytic modelling, cosmological rescaling techniques for dark matter simulations, forward modelling the cosmic microwave background, and pursuing novel applications of machine learning in astrophysics and cosmology.
+I work at the interface of cosmological large-scale structure and galactic astrophysics, studied through the lens of advanced statistical and machine-learning methodologies. My research develops new tests of the standard model of cosmology -- gravity and the dark sector -- using astrophysical objects, mainly galaxies and stars, and seeks to extract maximum information from galaxy surveys using statistically rigorous Bayesian forward modelling approaches. I am broadly interested in galaxy formation and the galaxy--halo connection, local large-scale structure and constrained cosmological simulations, the Hubble tension, tests of the cosmological principle, and symbolic regression and other forms of explainable AI applied to astrophysics or cosmology. I'm a member of the [Aquila Consortium for Bayesian large-scale structure inference](https://www.aquila-consortium.org/).
 {: style="text-align: justify"}
 
 ### Brief background
 
-Before Oxford, I completed my M.Sc. in Physics at the [Ludwig Maximilian University of Munich](https://www.lmu.de/en/), with my thesis on strong-field lensing of gravitational waves externally supervised by [Miguel Zumalac&aacute;rregui](https://miguelzuma.github.io) and [Marius Oancea](https://ufind.univie.ac.at/en/person.html?id=1000566), and my B.Sc. in Physics with Astrophysics at the [University of Glasgow](https://www.gla.ac.uk/), which included a year-long exchange at the [Hong Kong University of Science and Technology](https://hkust.edu.hk/). At Glasgow, I worked with [John Veitch](https://www.veitch.me.uk) and [Chris Messenger](https://www.gla.ac.uk/schools/physics/staff/christophermessenger/) on gravitational-wave data analysis. Before all of this, though, I come from the Czech Republic.
-{: style="text-align: justify"}
-
-While at Oxford, I held a [Pre-Doctoral Fellowship](https://www.simonsfoundation.org/flatiron-institute-center-for-computational-astrophysics-pre-doctoral-program/) at the [Center for Computational Astrophysics](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/), Flatiron Institute in New York working with [Shy Genel](https://users.flatironinstitute.org/~sgenel/) and [Lucia A. Perez](https://luciaperez.owlstown.net), and was a visiting researcher at the [Institut d'Astrophysique de Paris](https://www.iap.fr/) working with [Guilhem Lavaux](https://www.guilhem-lavaux.eu).
+I joined the ICG as a Senior Research Fellow in January 2022. Previously I held a McWilliams Fellowship at the [McWilliams Center for Cosmology](https://www.cmu.edu/physics/mcwilliams-center/), Carnegie Mellon University (2021), and a Junior Research Fellowship at [St John's College](https://www.sjc.ox.ac.uk/), Oxford (2017--2021). I received my PhD in Physics from [Stanford University](https://physics.stanford.edu/) in 2017, supervised by [Risa Wechsler](https://www.risawechsler.com/), and my MPhys in Astrophysics and Theoretical Physics from the University of Oxford in 2012, supervised by [Subir Sarkar](https://www.physics.ox.ac.uk/our-people/sarkar).
 {: style="text-align: justify"}
 
 ### Contact
 
-I am always happy to chat about research, potential collaborations, or just science in general -- feel free to drop me an email at [richard.stiskalek@physics.ox.ac.uk](mailto:richard.stiskalek@physics.ox.ac.uk).
+I am always happy to hear about potential collaborations and to chat about science -- drop me an email at [harry.desmond@port.ac.uk](mailto:harry.desmond@port.ac.uk).
 {: style="text-align: justify"}

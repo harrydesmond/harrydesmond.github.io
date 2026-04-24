@@ -1,0 +1,917 @@
+\documentclass[11pt]{article}
+
+\usepackage{calc}
+\usepackage[bottom]{footmisc}
+\usepackage{amsmath,amssymb}
+
+\reversemarginpar
+
+\usepackage[paper=letterpaper,
+            marginparwidth=1.2in,     % Length of section titles
+            marginparsep=.05in,       % Space between titles and text
+            margin=0.69in,
+            bottom=1in,
+            includemp]{geometry}
+
+\setlength{\parindent}{0in}
+
+\usepackage{paralist}
+
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+       \parbox{4in}{\, \hfill %
+                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+                    \hfill \,}}
+
+\usepackage{color}
+\usepackage[colorlinks,bookmarks]{hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.5}
+\hypersetup{linkcolor=darkblue,urlcolor=darkblue,anchorcolor=darkblue,citecolor=darkblue}
+            
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\newcommand{\makeheading}[1]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+                {\LARGE \bfseries #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{0.5pt}%
+         \end{minipage}}
+
+\renewcommand{\section}[2]%
+        {\pagebreak[2]\vspace{1.7\baselineskip}%
+         \phantomsection\addcontentsline{toc}{section}{#1}%
+         \hspace{0in}%
+         \marginpar{
+         \raggedright \scshape #1}#2}
+
+\newenvironment{outerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1]}{\end{itemize}%
+         \vspace{-.6\baselineskip}}
+
+\newenvironment{lonelist}[1][\enskip\textbullet]%
+        {\vspace{-\baselineskip}\begin{list}{#1}{%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{compactitem}[#1]}{\end{compactitem}}
+        
+\newenvironment{medlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1]}{\end{itemize}%
+         \vspace{-.6\baselineskip}}
+
+\newcommand{\blankline}{\quad\pagebreak[2]}
+
+
+% START
+
+\begin{document}
+\makeheading{Harry Desmond}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Contact Information}
+%
+\newlength{\rcollength}\setlength{\rcollength}{2.6in}%
+%
+%\textit{(removed for online CV)}
+%
+%\blankline
+%%
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
+Institute for Cosmology and Gravitation       & \textit{Email:} \href{mailto:harry.desmond@port.ac.uk}{harry.desmond@port.ac.uk} \\
+University of Portsmouth & \textit{Web:} \href{https://researchportal.port.ac.uk/en/persons/harry-desmond}{University of Portsmouth} \\
+Dennis Sciama Building & \textit{Citizenship:} Dual UK/USA    \\ 
+Portsmouth PO1 3FX & \textit{Date of birth:} 9 November 1990\\
+United Kingdom & \textit{Orcid ID:} 0000-0003-0685-9791\\
+\end{tabular}
+\end{tabular}
+
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Research Interests}
+Astrophysical tests of fundamental physics, galaxy dynamics \& phenomenology: modified gravity, dark matter, galaxy scaling relations, the galaxy--halo connection, local large-scale structure, (constrained) cosmological N-body and hydrodynamical simulations, tests of the cosmological principle
+
+\vspace{0.5\baselineskip}
+
+Astrostatistics and machine learning: Field-level inference, symbolic regression, explainable AI, causal discovery
+
+\vspace{0.5\baselineskip}
+
+Stellar structure and evolution
+
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Employment} %\vspace{-0.07in}
+\textbf{University Research Fellow \& Proleptic Senior Lecturer}  \hfill 01/2022 --
+\vspace{-0.07in}
+\begin{outerlist}
+\item[] Institute for Cosmology and Gravitation, University of Portsmouth
+\end{outerlist}
+
+\blankline
+
+\textbf{McWilliams Fellow}  \hfill 10/2021 -- 12/2021
+\vspace{-0.07in}
+\begin{outerlist}
+\item[] McWilliams Center for Cosmology, Carnegie Mellon University
+\end{outerlist}
+
+\blankline
+
+\textbf{Junior Research Fellow}  \hfill 10/2017 -- 09/2021
+\vspace{-0.07in}
+\begin{outerlist}
+\item[] University of Oxford (St. John's College)
+\end{outerlist}
+
+
+% %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% \section{Employment} %\vspace{-0.07in}
+% \textbf{Royal Society University Research Fellow}  \hfill 01/2022 -- 
+% \vspace{-0.07in}
+% \begin{outerlist}
+% \item[] Institute for Cosmology and Gravitation, University of Portsmouth
+% \end{outerlist}
+% 
+% \blankline
+% 
+% \textbf{McWilliams Fellow}  \hfill 10/2021 -- 01/2022
+% \vspace{-0.07in}
+% \begin{outerlist}
+% \item[] McWilliams Center for Cosmology, Carnegie Mellon University
+% \end{outerlist}
+% 
+% \blankline
+% 
+% \textbf{Junior Research Fellow}  \hfill 10/2017 -- 09/2021
+% \vspace{-0.07in}
+% \begin{outerlist}
+% \item[] University of Oxford (St. John's College)
+% \end{outerlist}
+
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Education} %\vspace{-0.07in}
+\textbf{Stanford University} \hfill 09/2012 -- 06/2017
+\vspace{-0.07in}
+\begin{outerlist}
+\item[] Ph.D.\ Physics
+%\vspace{-0.12in}
+\vspace{-0.12in}
+%  \item[] Thesis advisor: \textit{Risa Wechsler} \hfill {\em (expected)} 
+%  \item[] Thesis: \textit{Testing Halo Abundance Matching with Galaxy Dynamics} (advisor: Risa Wechsler) 
+        \begin{innerlist}
+        \vspace{0.07in}
+        \item[] \textit{Thesis:} Dynamical constraints on the galaxy--halo connection
+        \item[] \textit{Supervisor:} Risa Wechsler
+        \end{innerlist}
+\end{outerlist}
+
+\blankline
+
+\textbf{University of Oxford} (St. John's College)  \hfill 10/2008 -- 06/2012
+\vspace{-0.07in}
+\begin{outerlist}
+\item[] MPhys.\ Astrophysics \& Theoretical Physics, first class honours
+\vspace{-0.12in}
+        \begin{innerlist}
+        \vspace{0.07in}
+        \item[] \textit{Thesis:} The baryonic Tully-Fisher relation predicted by cold dark matter
+        \item[] \hspace{0.5in} cosmogony
+        \item[] \textit{Supervisor:} Subir Sarkar
+        \end{innerlist}
+\end{outerlist}
+
+\blankline
+
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Selected Awards and Honours}
+%
+Beecroft Visiting Fellowship (University of Oxford) \hfill 01/2026--04/2026
+
+\vspace{0.5\baselineskip}
+
+Royal Society Enhancement grant \hfill 2022, 2023
+
+\vspace{0.5\baselineskip}
+
+McWilliams Center Seed Grant (Carnegie Mellon University) \hfill 2021--2022
+
+\vspace{0.5\baselineskip}
+
+Balzan Fellowship, Centre for Cosmological Studies, New College\\
+(University of Oxford) \hfill 2017
+
+\vspace{0.3\baselineskip}
+
+Paul H. Kirkpatrick award for excellence in teaching (Stanford University) \hfill 2014
+
+\vspace{0.5\baselineskip}
+
+Gregory and Mary Chabolla Graduate Fellowship (Stanford University) \hfill 2012
+
+\vspace{0.5\baselineskip}
+
+Scott Prize for best overall performance in the MPhys examination\\
+(University of Oxford) \hfill 2012 
+
+\vspace{0.5\baselineskip}
+
+BP Prize for best MPhys project in theoretical physics (University of Oxford) \hfill 2012
+
+\vspace{0.5\baselineskip}
+
+Winton Capital Prize for highest marks in the second year Physics examinations\newline(University of Oxford) \hfill 2010
+
+\vspace{0.5\baselineskip}
+
+Casberd Scholarship at St. John's College (University of Oxford) \hfill 2009
+
+\vspace{0.5\baselineskip}
+
+$39^\mathrm{th}$ International Physics Olympiad in Hanoi, Bronze Medal \hfill 2008
+
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% \section{Seminars}
+% \textbf{The Effective Field Theory of Large-Scale Structures.}
+% \vspace{-0.35\baselineskip}
+% \begin{outerlist}
+% \item[] Seminar, Physics of Information group, University of Waterloo \hfill 10/2015 \\
+% \vspace{-1.4\baselineskip}
+% \item[] Informal presentation, LSS reading group, Perimeter Institute \hfill 10/2015 \\
+% \vspace{-1.4\baselineskip}
+% \item[] Seminar, CITA \hfill 10/2015 \\
+% \vspace{-1.4\baselineskip}
+% \item[] Cake Talk, DARK Cosmology Centre \hfill 07/2015
+% \end{outerlist}
+% 
+% \footnotetext{\footnotemark[1]\em NSERC = Natural Sciences and Engineering Research Council of Canada} 
+% 
+% \pagebreak
+
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Selected Seminars and Presentations}
+%
+\textbf{Forward-modelling a two-rung distance ladder: A 1.8\% constraint on $H_0$}
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+% \vspace{-0.8\baselineskip}
+\item[] \textit{CosmoVerse Seminar} \hfill 01/2026 \\
+% \vspace{-1.4\baselineskip}
+\end{outerlist}
+\vspace{-0.35\baselineskip}
+\textbf{Exhaustive Symbolic Regression: Learning (Astro)Physics directly from Data}
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+\vspace{-0.8\baselineskip}
+\item[] \textit{Astrophysics Colloquium}, IAP (\href{https://www.youtube.com/watch?v=HIpzCx9-4T0}{recording}) \hfill 11/2025 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology Seminar}, Queen Mary University \hfill 10/2025 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Symbolic Regression in the Physical Sciences}, Royal Society workshop \hfill 04/2025 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{High Energy Physics Seminar}, University of Southampton \hfill 11/2024 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{PHYSTAT conference}, Imperial College London (\href{https://indico.cern.ch/event/1407421/contributions/6097927/attachments/2924116/5132808/Imperial_Poster.pdf}{poster}) \hfill 09/2024 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{COSMO21 conference}, Chania, Crete \hfill 05/2024 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Astrophysics Colloquium}, University of Oxford \hfill 02/2024 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Astroseminar}, University of Waterloo \hfill 01/2024 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Webinar on Mathematics, Physics and Machine Learning}, IST Lisbon (online \href{https://mpml.tecnico.ulisboa.pt/seminars?id=6974}{here})\hfill 05/2023 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{ICG Monday Lunch Talk}, University of Portsmouth \hfill 05/2023 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology Seminar}, University of Sussex \hfill 04/2023 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology Seminar}, Imperial College London \hfill 03/2023 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology Seminar}, University College London \hfill 01/2023 \\
+\vspace{-1.4\baselineskip}
+\end{outerlist}
+
+\blankline
+
+\textbf{Symbolic Regression: Philosophy, Methods \& Practice}
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+\item[] \textit{Cosmology Seminar}, University College London \hfill 10/2024 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Machine Learning Seminar}, Microsoft London \hfill 07/2024 \\
+\vspace{-1.4\baselineskip}
+\end{outerlist}
+
+\blankline
+
+\textbf{Modified Newtonian Dynamics: Observational successes and challenges}
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+\item[] \textit{Rencontres de Moriond, Gravitation}, La Thuile, Italy (Invited) \hfill 04/2025 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology Seminar}, University of Oxford \hfill 04/2025 \\
+\vspace{-1.4\baselineskip}
+\end{outerlist}
+
+\blankline
+
+\textbf{Testing $\Lambda$CDM with local large-scale structure, galaxies, and stars}
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+\item[] \textit{Astrophysics Seminar}, Bath \hfill 11/2024 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Universe Seminar}, IAP \hfill 10/2024 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Relativity and Cosmology Seminar}, QMUL \hfill 11/2023 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Dalitz Seminar}, University of Oxford \hfill 05/2022 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{JBCA Colloquium}, University of Manchester \hfill 04/2022 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology Seminar}, University of Pennsylvania \hfill 12/2021 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Astronomy Seminar}, Case Western Reserve University \hfill 12/2021 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology Seminar}, University of Hawaii \hfill 12/2021 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{ICG astrophysics Colloquium}, University of Portsmouth \hfill 11/2021 \\
+\vspace{-1.\baselineskip}
+\end{outerlist}
+
+\blankline
+
+\textbf{Inferring Causation from Correlation}
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+\item[] \textit{ICG Forum}, Portsmouth \hfill 06/2024 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology journal club}, University of Oxford \hfill 01/2024 \\
+\vspace{-1.\baselineskip}
+\end{outerlist}
+
+\blankline
+
+\textbf{Four ways of looking at the Radial Acceleration Relation}
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+\item[] \textit{Cosmology Seminar}, University of Strasbourg \hfill 10/2024 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology Seminar}, Indian Institute of Technology, Hyderabad \hfill 04/2024 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology Seminar}, CEICO - FZU, Prague \hfill 02/2024 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Astronomy Seminar}, University of St Andrews \hfill 02/2024 \\
+\vspace{-1.\baselineskip}
+\end{outerlist}
+
+\blankline
+
+\textbf{Fundamental physics from galaxies}
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+\item[] \textit{Astrophysics Colloquium}, Institute for Theoretical Astrophysics, Oslo \hfill 01/2020 \\
+\vspace{-1.\baselineskip}
+\end{outerlist}
+
+\blankline
+
+\textbf{Astrophysical tests of gravity}
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+\item[] \textit{The Paris--Saclay AstroParticle Symposium 2019} \hfill 10/2019 \\
+\vspace{-1.\baselineskip}
+\end{outerlist}
+
+\blankline
+
+\textbf{A local resolution of the Hubble tension: The impact of screened fifth forces on the cosmic distance ladder}
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+\item[] \textit{Standard cosmology at the threshold of change?}, Thessaloniki \hfill 06/2024 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmic Controversies}, Chicago \hfill 10/2019 \\
+\vspace{-1.\baselineskip}
+\end{outerlist}
+
+\blankline
+
+\textbf{Galaxy velocity \& size correlations, the halo Tully--Fisher relation and tests of the External Field Effect}
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+\item[] \textit{Bonn gravitation workshop} \hfill 09/2019 \\
+\vspace{-1.\baselineskip}
+\end{outerlist}
+
+\blankline
+
+\textbf{Fifth force searches in galaxies} 
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+\item[] \textit{PPPAC Seminar}, Imperial College London \hfill 03/2021 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Progress on Old and New Themes in Cosmology}, Avignon, France \hfill 12/2020 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Dark Energy in a Dark Age}, APCTP, Pohang, South Korea \hfill 10/2020 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{CRAG Seminar}, Sheffield \hfill 10/2020 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology Seminar}, Institute for Theoretical Astrophysics, Oslo \hfill 01/2020 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{The Paris--Saclay AstroParticle Symposium 2019} \hfill 10/2019 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{The Cosmic Web workshop}, Edinburgh \hfill 06/2019 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{15th Patras Workshop on Axions, WIMPs and WISPs}, Freiburg \hfill 06/2019 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology Seminar}, University College London \hfill 06/2019 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Astrophysics Seminar}, Imperial College London \hfill 05/2019 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{ICG Colloquium}, Portsmouth \hfill 03/2019 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology Seminar}, Durham ICC \hfill 02/2019 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{LSS group meeting}, Edinburgh \hfill 02/2019 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Particle Theory Seminar}, Nottingham CAPT \hfill 02/2019 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{IAP Universe Journal Club}, Paris \hfill 10/2018 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology group meeting}, University of Pennsylvania, Philadelphia \hfill 10/2018\\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology Seminar}, CITA, Toronto (online \href{https://www.youtube.com/watch?v=zUF7ciY2r84}{here}) \hfill 07/2018 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Aquila consortium group meeting}, Stockholm \hfill 03/2018
+\end{outerlist}
+
+\blankline
+
+\textbf{Gravitational maps and tests of screening} 
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+\item[] \textit{Aquila consortium group meeting}, MPIA, Garching \hfill 11/2017 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology group meeting}, University of Pennsylvania, Philadelphia \hfill 09/2017
+\end{outerlist}
+
+\blankline
+
+\textbf{Dynamical constraints on the galaxy--halo connection} 
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+\item[] \textit{The Physics of Galaxy Scaling Relations}, Queen's University, Kingston (\href{https://darkmatter2018.weebly.com/posters.html}{poster}) \hfill 07/2018 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Lunchtime Talk}, ESO, Garching \hfill 11/2017 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Quantifying and Understanding the Galaxy--Halo Connection}, KITP, University of California Santa Barbara (poster) \hfill 05/2017 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology Seminar}, University of Sussex \hfill 08/2016 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Cosmology Seminar}, University College London \hfill 08/2016 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Galaxies Discussion Group}, Cambridge \hfill 08/2016 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{FLAT Talk}, Durham \hfill 08/2016 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Institute for Astronomy Seminar}, Edinburgh \hfill 08/2016
+\end{outerlist}
+
+\blankline
+
+\textbf{Testing halo abundance matching with galaxy dynamics}
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+\item[] \textit{2016 Munich Joint Conference, Discs in Galaxies}, ESO, Garching (poster) \hfill 07/2016 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{SnowPAC 2016, The Galaxy--Halo Connection}, Snowbird, Utah, USA \hfill 03/2016
+\end{outerlist}
+
+\blankline
+
+\textbf{The Tully--Fisher and mass--size relations from halo abundance matching}
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+\item[] \textit{CosmoClub Cosmology Seminar}, UCSC \hfill 11/2015 \\
+\vspace{-1.4\baselineskip}
+\item[] \textit{Santa Cruz Galaxy Workshop}, UCSC (online \href{https://www.youtube.com/watch?v=jesRZGNUvtU}{here})  \hfill 08/2015\\
+\vspace{-1.4\baselineskip}
+\item[] \textit{KIPAC Tea}, Stanford \hfill 06/2015
+\end{outerlist}
+
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Postdoc supervision}
+
+\vspace{-1.\baselineskip}
+
+\textit{Indranil Banik} \hfill 08/2024 --\\
+Local solutions to the Hubble and bulk flow tensions\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Ricardo Landim} \hfill 10/2022 -- 08/2024\\
+Constraining screened scalar--tensor theories with galaxy dynamics
+
+\section{Student supervision}
+
+\vspace{-1.\baselineskip}
+
+\textit{Noah Pierce} (BSc, Southampton) \hfill 2025\\
+Testing the local supervoid with galaxy counts (w/ T. Yasin, R. Stiskalek \& I. Banik)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Thenu Kaluarachchige} (BSc, St. Andrews) \hfill 2025\\
+Inferring the Universe's age from the Milky Way's oldest stars (w/ I. Banik \& R. Stiskalek)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Joshua Darne} (MPhys, Oxford) \hfill 2025\\
+The radial acceleration relation in hydrodynamical simulations (w/ T. Yasin \& R. Stiskalek)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Antonio N\'{a}jera} (PhD, Portsmouth) \hfill 2024 --\\
+New handles on the cosmic distance ladder\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Aditya Naik} (BSc, QMUL) \hfill 2024\\
+Inferring causation from correlation\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Catherine Spencer} (MPhys, Oxford) \hfill 2024 -- 2025\\
+The environment-dependence of galaxy properties (w/ T. Yasin \& M. Jarvis)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Fedir Boreiko} (BSc, Manchester) \hfill 2024 -- 2025\\
+Kinematic constraints on halo abundance matching (w/T. Yasin, R. Stiskalek \& M. Jarvis)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Enoch Ko} (BSc, Warwick) \hfill 2024 -- 2025\\
+Quantifying Renzo's rule (w/ T. Yasin, R. Stiskalek \& M. Jarvis)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{James Harvey} (BSc, Oxford) \hfill 2024\\
+Predicting star formation histories from halo mergers (w/ T. Yasin \& R. Stiskalek)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Alicia Martin} (PhD, Oxford) \hfill 2023 --\\
+Machine-learning fundamental physics from cosmology (w/ P. Ferreira, T. Yasin \& D. Bartlett)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Lukas Kammerer} (PhD, Hagenberg) \hfill 2023 --\\
+Sumbolic emulators for cosmological power spectra (w/ D. Bartlett \& P. Ferreira)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Param Upadhyay} (BSc, Tufts) \hfill 2023\\
+A second look at the bulk flow of CosmicFlows-4 (w/ S. von Hausegger \& S. Sarkar)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Amelia Ford} (BSc, Southampton) \hfill 2023 -- 2024\\
+Symbolically regressing luminosity and mass functions (w/ D. Bartlett \& P. Ferreira)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Dhruva Patel} (BSc, Open University) \hfill 2023 -- 2024\\
+Testing the isotropy of the universe\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Tomas Sousa} (MPhys, Nottingham) \hfill 2023\\
+Machine-learning the inflaton potential (w/ P. Ferreira \& D. Bartlett)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Richard Stiskalek} (PhD, Oxford) \hfill 2022 --\\
+Leveraging constrained large-scale structure simulations for new tests of physics (w/ J. Devriendt \& A. Slyz)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Nazanin Azimi} (BSc, CMU) \hfill 2022\\
+Emulating stellar structure simulations\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Ekaterine Dadiani} (PhD, CMU) \hfill 2021 -- 2022\\
+The galaxy--halo connection in the MassiveBlack-II simulation\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{\O{}yvind Christiansen} (PhD, Oslo) \hfill 2021 -- 2022\\
+Simulating asymmetric correlation functions in modified gravity (w/ D. Mota)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Tariq Yasin} (DPhil, Oxford) \hfill 2020 -- 2023\\
+Combining kinematic and photometric constraints on the galaxy--halo connection\\ (w/ J. Devriendt \& A. Slyz)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Maxwell Hutt} (MPhys, Oxford) \hfill 2020 -- 2022\\
+Topics in constrained N-body simulation (w/ J. Devriendt \& A. Slyz)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Alicia Martin} (MPhys, Manchester) \hfill 2020\\
+Symbolically regressing halo density profiles (w/ P. Ferreira, T. Yasin \& D. Bartlett)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Deaglan Bartlett} (DPhil, Oxford) \hfill 2019 -- 2022\\
+Fundamental physics from galaxies (w/ P. Ferreira)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Richard Stiskalek} (BSc, Glasgow) \hfill 2019\\
+Halo abundance matching with total baryonic mass\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Isabel Sands} (BSc, Yale) \hfill 2019\\
+Numerical solutions for scalar field profiles (w/ P. Ferreira)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Robert Clemenson} (MPhys, Oxford) \hfill 2019\\
+Non-gaussianity of weak lensing likelihoods (w/ S. Joudaki)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Darsh Kodwani} (DPhil, Oxford) \hfill 2018 -- 2019\\
+Screened modified gravity in relativistic perturbation theory\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Thomas Holvey} (MPhys, Oxford) \hfill 2018 -- 2019\\
+Baryon mass functions from ALFALFA $\times$ SDSS\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Eliza Dickie} (MPhys, Oxford) \hfill 2018 -- 2019\\
+Fifth-force observables in hydrodynamical simulations\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{Kris Pardo} (PhD, Princeton) \hfill 2018 -- 2019\\
+Testing self-interacting dark matter with galaxy warps (w/ P. Ferreira)\\
+
+\vspace{-0.5\baselineskip}
+
+\textit{William Martin} (BSc, Cambridge) \hfill 2018 \\
+Dynamical probes of screened fifth forces
+
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Teaching}
+%
+Lecturer: Functions of a complex variable \& integral transforms (Portsmouth) \hfill 2023 --\\
+
+\vspace{-0.35\baselineskip}
+
+Course designer \& lecturer: \textit{Exploring galaxies with the Sloan Digital Sky Survey} (CMU) \hfill \textcolor{white}{sdgs asf as} 2022\\
+
+\vspace{-0.35\baselineskip}
+
+Tutor: Cosmology 4$^\text{th}$ year MMathPhys course (Oxford) \hfill Hilary 2021\\
+
+\vspace{-0.35\baselineskip}
+
+Tutor: Astrophysics 4$^\text{th}$ year MPhys major option (Oxford) \hfill 2020 -- 2021\\
+
+\vspace{-0.35\baselineskip}
+
+Tutor: Mechanics CP1 (Oxford) \hfill Hilary 2018\\
+
+% \vspace{-0.35\baselineskip}
+% \vspace{0.15\baselineskip}
+% \newpage
+
+\textbf{Stanford Teaching Assistantships}
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+\item[] Cosmology (\textit{Phys 361}; graduate level) \hfill Winter 2016\\
+% $\text{ }\;\;$ 
+% {\footnotesize 13 students} \\
+\vspace{-1.4\baselineskip}
+\item[] Intermediate Electromagnetism II (\textit{Phys 121}; 2nd yr undergraduate) \hfill Spring 2015\\
+% $\text{ }\;\;$ 
+% {\footnotesize 12 students, response 4.6/5} \\
+\vspace{-1.4\baselineskip}
+\item[] Introduction to Laboratory Physics (\textit{Phys 67}; 1st yr undergraduate) \hfill Spring 2014\\
+% $\text{ }\;\;$ 
+% {\footnotesize 23 students, response 4.6/5} \\
+\vspace{-1.4\baselineskip}
+\item[] Mechanics and Special Relativity (\textit{Phys 61}; 1st yr undergraduate) \hfill Autumn 2013\\
+% $\text{ }\;\;$ 
+% {\footnotesize 15 students, response 4.5/5} \\
+\vspace{-1.4\baselineskip}
+\item[] Modern Physics (\textit{Phys 26}; physics for non-majors) \hfill Spring 2013\\
+% $\text{ }\;\;$ 
+% {\footnotesize 28 students, response 4.6/5} \\
+\end{outerlist}
+
+% \vspace{0.5\baselineskip}
+
+Physics TA mentor (Stanford Mentors in Teaching Program) \hfill 2014 -- 2017 
+
+\vspace{0.5\baselineskip}
+
+Mentor, ``Gravity! From the Big Bang to Black Holes''\\
+(MOOC run by Paris Diderot) \hfill 2016
+
+\vspace{0.5\baselineskip}
+
+Stanford Splash! \hfill 2014 -- 2017
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Languages}
+%
+Python, JAX, C/C++, Mathematica, Fortran, Matlab, SQL, ROOT
+
+\vspace{0.5\baselineskip}
+
+Simulation codes: RAMSES, MESA
+
+\vspace{0.5\baselineskip}
+
+English (native), French (intermediate), German (basic)
+
+% \pagebreak
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Service}
+%
+Referee for \textit{MNRAS, ApJ, JCAP, A\&A, MDPI (Galaxies, Particles), IJMPA, IJMPD, EPJP, MPLA, Phys. Lett. B, Hindawi, Ap\&SS, Open J. of Astrophysics, Int. J. Theor. Phys., Class. Quantum Grav.}, \textit{Nuclear Physics B, PRD, PRR, PRL}, \textit{Science Bulletin, PASA, JHEAp}, \textit{Phil. Trans. R. Soc. A}, \textit{Results in Physics} and \textit{Science}
+% \textcolor{white}{ererer rer}
+\hfill 2016 --
+
+\vspace{0.5\baselineskip}
+
+Member of the Aquila Consortium Editorial Advisory Group \hfill 2022--2023 \& 2025--2027
+
+\vspace{0.5\baselineskip}
+
+External PhD thesis examiner (Nottingham) \hfill 2025
+
+\vspace{0.5\baselineskip}
+
+Guest Editor of Special Issue ``Symbolic Regression in the Physical Sciences'' (\textit{Philosophical Transactions of the Royal Society A}) \hfill 2025
+
+\vspace{0.5\baselineskip}
+
+Guest Editor of Special Issue ``The Hubble Tension in Cosmology'' (\textit{Galaxies}) \hfill 2025
+
+\vspace{0.5\baselineskip}
+
+STFC Small Award reviewer \hfill 2024
+
+\vspace{0.5\baselineskip}
+
+Member of the MIGHTEE collaboration \hfill 2023 --
+
+\vspace{0.5\baselineskip}
+
+ICG Colloquium organiser (Portsmouth) \hfill 2022 --
+
+\vspace{0.5\baselineskip}
+
+Internal fellowship assessor (Portsmouth) \hfill 2022
+
+\vspace{0.5\baselineskip}
+
+EuCAPT Portsmouth \& Sussex rep and Training task force member \hfill 2022 --
+
+\vspace{0.5\baselineskip}
+
+McWilliams Journal Club organiser (CMU) \hfill 2021 -- 2022
+
+\vspace{0.5\baselineskip}
+
+External grant reviewer for the Polish National Science Centre ($\times 2$) \hfill 2020 -- 2021
+
+\vspace{0.5\baselineskip}
+
+MMathPhys masters project assessor (Oxford) \hfill 2019
+
+\vspace{0.5\baselineskip}
+
+Academic Services Committee (St. John's College) \hfill 2019 -- 2020
+
+\vspace{0.5\baselineskip}
+
+Cosmology Reading Group organiser (Oxford) \hfill 2017 -- 2019
+
+\vspace{0.5\baselineskip}
+
+Novel Probes Project, founding member \hfill 2017
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Workshop Organisation}
+%
+\href{https://conference.astro.dur.ac.uk/event/7/program}{National Astronomy Meeting} parallel session \textit{``Theoretical and observational approaches to the Hubble tension''} (Durham) \hfill 07/2025
+
+\vspace{0.5\baselineskip}
+
+\href{https://royalsociety.org/science-events-and-lectures/2025/04/symbolic-regression/}{Symbolic Regression in the Physical Sciences} (Royal Society, London) \hfill 04/2025
+
+\vspace{0.5\baselineskip}
+
+\textit{Stellar Tests of Gravity} workshop  (CMU) \hfill 03/2022
+
+\vspace{0.5\baselineskip}
+
+\href{https://www.aquila-consortium.org/}{Aquila Consortium} group meeting (St John's College, Oxford) \hfill 05/2019
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Outreach}
+%
+Interviewed for \textit{New Scientist} (regarding \href{https://arxiv.org/abs/2408.11065}{this}) \hfill 8/2024
+
+\vspace{0.5\baselineskip}
+
+Interviewed for \textit{The Sensemaker} (\href{https://www.tortoisemedia.com/2024/05/14/dont-believe-in-dark-matter-pay-attention/}{article}) \hfill 5/2024
+
+\vspace{0.5\baselineskip}
+
+Wrote \href{https://theconversation.com/is-dark-matters-main-rival-theory-dead-theres-bad-news-from-the-cassini-spacecraft-and-other-recent-tests-228826}{article} for \textit{The Conversation} \hfill 5/2024
+
+\vspace{0.5\baselineskip}
+
+Interviewed for \textit{New Scientist} (\href{https://www.newscientist.com/article/mg26234870-100-we-live-in-a-cosmic-void-so-empty-that-it-breaks-the-laws-of-cosmology/}{article}) \hfill 3/2024
+
+\vspace{0.5\baselineskip}
+
+SciTech Day career panelist (Carnegie Science Center, Pittsburgh) \hfill 12/2021
+
+\vspace{0.5\baselineskip}
+
+Oxford Stargazing, Cosmology stall \hfill 2018 -- 2019
+
+\vspace{0.5\baselineskip}
+
+\textbf{St. John's College}
+\vspace{-0.35\baselineskip}
+\begin{outerlist}
+\item[] Inspire Digital column ``\href{https://sjcinspire.com/dr-harrys-questions/}{Dr Harry's Questions}'' \hfill 2019 -- 2020\\
+\vspace{-1.4\baselineskip}
+\item[] Research Blast \hfill 02/2020\\
+\vspace{-1.4\baselineskip}
+\item[] Teachers' Residential Programme mini-seminar \hfill 04/2019\\
+\vspace{-1.1\baselineskip}
+\end{outerlist}
+
+\vspace{0.5\baselineskip}
+
+Publicity officer for Oxford University Space and Astronomical Society \hfill 2010 -- 2011
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Training}
+%
+Introduction to Management (Royal Society) \hfill 7/2023
+
+\vspace{0.5\baselineskip}
+
+Leadership Effectiveness (Royal Society) \hfill 10/2023
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Publications}
+%
+%\raggedright 1.\ ``Catalogues of voids as antihalos in the local Universe'' \textbf{H. Desmond}, M. L. Hutt, J. Devriendt, A. Slyz. MNRAS submitted (2021). [arXiv:\href{https://arxiv.org/abs/XXXX.XXXXX}{XXXX.XXXXX}]
+%
+%\blankline
+%
+\href{https://arxiv.org/search/?query=harry+desmond&searchtype=all&source=header}{arXiv} 
+
+\blankline
+
+\href{https://ui.adsabs.harvard.edu/search/q=\%20author\%3A\%22Desmond\%2C\%20H\%22&sort=date\%20desc\%2C\%20bibcode\%20desc&p_=0}{NASA ADS} 
+
+\blankline
+
+\href{https://inspirehep.net/authors/1871777}{INSPIRE HEP} 
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\grid
