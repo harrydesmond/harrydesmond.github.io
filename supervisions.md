@@ -46,6 +46,11 @@ Machine-learning fundamental physics from cosmology, with a focus on symbolic re
 New handles on the cosmic distance ladder: investigating and developing alternative distance-calibration methods, and models for the Hubble tension.
 {: style="text-align: justify; margin-top: 0.2em"}
 
+**Navdha** (Oxford DPhil, 2026 --)
+{: style="margin-bottom: 0"}
+Unveiling the nature of dark matter with Euclid, Rubin and MeerKAT.
+{: style="text-align: justify; margin-top: 0.2em"}
+
 ### Undergraduate and masters students
 
 I have supervised research projects for over twenty BSc and MPhys/MSci students across Portsmouth, Oxford, Carnegie Mellon, and collaborating institutions, which has led to a great many publications. Get in touch if you're interested in working with me!
