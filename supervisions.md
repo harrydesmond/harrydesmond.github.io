@@ -33,7 +33,7 @@ Thesis *"Combining kinematic and photometric constraints on the galaxy--halo con
 
 **[Richard Stiskalek](https://richard-sti.github.io/)** (Oxford DPhil, 2022 -- 2026) [[our papers](https://ui.adsabs.harvard.edu/search/q=author%3A%22Desmond%2C+H%22+author%3A%22Stiskalek%2C+R%22&sort=date+desc)]
 {: style="margin-bottom: 0"}
-Thesis *"Constrained simulations of the local Universe as a laboratory for precision cosmology and astrophysics"*: Leveraging constrained large-scale structure simulations for new tests of cosmology and galaxy formation: the cosmography of the local Universe, peculiar-velocities, the distance ladder, H&#x2080; inference and various other things.
+Thesis *"Constrained simulations of the local Universe as a laboratory for precision cosmology and astrophysics"*: Leveraging constrained large-scale structure simulations for new tests of cosmology and galaxy formation: the cosmography of the local Universe, peculiar-velocities, the distance ladder, H&#x2080; inference and various other things. Now a postdoctoral fellow at Oxford.
 {: style="text-align: justify; margin-top: 0.2em"}
 
 **[Alicia Martin](https://www.physics.ox.ac.uk/our-people/martina)** (Oxford DPhil, 2023 --) [[our papers](https://ui.adsabs.harvard.edu/search/q=author%3A%22Desmond%2C+H%22+author%3A%22Martin%2C+A%22&sort=date+desc)]
